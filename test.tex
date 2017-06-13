@@ -1,0 +1,182 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{textpos}
+
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    urlcolor=white           % color of external links
+}
+\title{Apples and oranges}
+\date[18022016]{18 février 2016}
+\author[GPR]{DIM / DOMU / \href{www.aphp.fr}{AP-HP}}
+
+\usetheme{texsx}
+
+
+
+% Sources d'inspirations :
+%http://tex.stackexchange.com/questions/146529/design-a-custom-beamer-theme-from-scratch
+%http://tex.stackexchange.com/questions/80199/how-to-use-color-by-number
+%http://tex.stackexchange.com/questions/24434/how-to-specify-a-fill-color-in-rgb-format-in-a-node-in-tikzpicture
+\setbeamercolor{progress bar progress}{use=progress bar,bg=progress bar.fg}
+\defbeamertemplate{footline}{progress bar}{
+  \ifnum\thepage>1\relax%
+  \dimen0=\paperwidth
+  \multiply\dimen0 by \insertframenumber
+  \divide\dimen0 by \inserttotalframenumber
+  \edef\progressbarwidth{\the\dimen0}
+
+  \leavevmode%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.5ex,dp=0.5ex]{progress bar}
+    \begin{beamercolorbox}[wd=\progressbarwidth,ht=0.5ex,dp=0.5ex]{progress bar progress}
+    \end{beamercolorbox}%
+  \end{beamercolorbox}%
+  \fi
+}
+\setbeamertemplate{footline}[progress bar]
+\definecolor{un}{RGB}{0,98,174}
+\definecolor{deux}{RGB}{51,173,255}
+\definecolor{trois}{RGB}{44,37,107}
+\definecolor{quatre}{RGB}{0,0,51}
+\setbeamercolor{progress bar}{fg=trois,bg=deux}
+
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+\addtobeamertemplate{title page}{}{
+\begin{textblock*}{100mm}(.77\textwidth,0.57cm)
+\includegraphics[height=0.7cm]{logo.jpg}
+\end{textblock*}}
+
+\addtobeamertemplate{frametitle}{}{
+\begin{textblock*}{100mm}(.77\textwidth,7.06cm)
+\includegraphics[height=0.7cm]{logo.jpg}
+\end{textblock*}}
+%http://tex.stackexchange.com/questions/59742/progress-bar-for-latex-beamer
+
+\begin{document}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame} 
+\frametitle{Fluctuat nec mergitur} \label{Fluctuat nec mergitur} 
+\framesubtitle{2015 : \textit{Lorem Ipsum ?}} 
+\begin{block}{Lorem...}
+... Ipsum\end{block} 
+\begin{enumerate} 
+\item<1-| alert@1> Le Lorem Ipsum est simplement du faux texte
+\item<2-> Pourquoi l'utiliser?
+\item<3-> D'où vient-il?
+\item<4-> Où puis-je m'en procurer?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Activité AP-HP} 
+\framesubtitle{2015 : \textit{Lorem Ipsum ?}} 
+\begin{block}{Lorem...}
+... Ipsum\end{block} 
+\begin{enumerate} 
+\item<1-> Le Lorem Ipsum est simplement du faux texte
+\item<2-> Pourquoi l'utiliser?
+\item<3-> D'où vient-il?
+\item<4-> Où puis-je m'en procurer?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 1
+\item Pellentesque auctor 2
+\end{itemize}
+\end{frame}
+
+\begin{frame}Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 3
+\item Pellentesque auctor 4
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 5
+\item Pellentesque auctor 6
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 7
+\item Pellentesque auctor 8
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 9
+\item Pellentesque auctor 10
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 11
+\item Pellentesque auctor 12
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 13
+\item Pellentesque auctor 14
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 15
+\item Pellentesque auctor 16
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Lorem ipsum dolor sit ametv}
+\begin{itemize}
+\item consectetur adipiscing elit 17
+\item Pellentesque auctor 18
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 19
+\item Pellentesque auctor 20
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Lorem ipsum dolor sit amet}
+\begin{itemize}
+\item consectetur adipiscing elit 21
+\item Pellentesque auctor 22
+\end{itemize}
+\end{frame}
+
+\end{document}
