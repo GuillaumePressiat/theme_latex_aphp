@@ -1,0 +1,38 @@
+---
+title: "Habits"
+author: Gui
+date: 18/02/2016
+output: 
+  beamer_presentation:
+    template: "beamertemplate.tex"
+---
+
+
+
+# In the morning
+
+## Getting up
+
+http://tex.stackexchange.com/questions/114747/use-new-beamer-theme
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+

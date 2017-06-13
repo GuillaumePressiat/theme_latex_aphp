@@ -1,0 +1,40 @@
+\mode<presentation>
+
+\setbeamertemplate{background}{
+\definecolor{un}{RGB}{0,98,174}
+\definecolor{deux}{RGB}{51,173,255}
+\definecolor{trois}{RGB}{44,37,107}
+\definecolor{quatre}{RGB}{0,0,51}
+
+\begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=trois] (0,8.7) rectangle (\the\paperwidth,\the\paperheight);
+%\fill[un] (8,0) rectangle(\the\paperwidth,1.2);
+  \fill[color=deux] (0,8.7) rectangle(\the\paperwidth,1);
+  \ifnum\thepage>1\relax%
+   \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \fi
+  \end{tikzpicture}
+}
+
+% Title page
+\defbeamertemplate*{title page}{texsx}[1][]
+{ 
+   \vskip3cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=1.2cm,sep=8pt,#1]{title page header}
+      \usebeamerfont{title}\inserttitle\par%
+    \end{beamercolorbox}%
+    \vskip0.75cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=1.4cm,#1]{author}
+      \usebeamerfont{author}\insertauthor%
+    \end{beamercolorbox}
+     \vskip0.2cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=1.4cm,#1]{date}
+      \usebeamerfont{author}\insertdate%
+    \end{beamercolorbox}
+     \begin{beamercolorbox}[wd=4cm,leftskip=8cm,#1]{date}
+      \usebeamerfont{author}\insertlogo%
+    \end{beamercolorbox}
+  \vfill
+
+}
