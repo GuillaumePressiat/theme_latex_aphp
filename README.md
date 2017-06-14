@@ -4,3 +4,4 @@
 - template pour les beamer en rmarkdown, et template alternatif dans le dossier /beamer_rmarkdown/old_theme
 
 
+Voir les exemples dans le répertoire `pdf_exemples`.
